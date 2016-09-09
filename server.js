@@ -74,8 +74,7 @@ function start() {
                     }
                     //有callback字段则为jsonp请求。
                     if (params.query && params.query.callback) {
-                        var str = params.query.callback + '(' + file +
-                            ')';
+                        var str = params.query.callback + '(' + file + ')';
                         response.write(str, 'utf-8');
                         response.end();
                     } else {

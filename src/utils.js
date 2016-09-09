@@ -38,9 +38,7 @@ $.extend({
     isDate: function(obj) {
         return Object.prototype.toString.call(obj) === '[object Date]';
     },
-    isArray: function(obj) {
-        return Object.prototype.toString.call(obj) === '[object Array]';
-    },
+    isArray: Array.isArray,
     isObject: function(obj) {
         return Object.prototype.toString.call(obj) === '[object Object]';
     },
